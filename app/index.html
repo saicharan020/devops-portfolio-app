@@ -1,36 +1,109 @@
-<!-- app/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My DevOps Portfolio</title>
+  <title>Sai Charan • DevOps Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Sai Charan</h1>
-    <p>I'm a passionate DevOps Engineer with experience in Docker, GitHub Actions, and CI/CD automation.</p>
-
-    <div class="card">
-      <h2>Projects</h2>
-      <p><strong>DevOps Portfolio App</strong> – Dockerized static website with CI/CD pipeline using GitHub Actions and Docker Hub integration.</p>
+  <header class="header">
+    <div class="container">
+      <h1>Hi, I'm Sai Charan</h1>
+      <p class="tagline">
+        DevOps Engineer • Docker • GitHub Actions • CI/CD • Azure
+      </p>
     </div>
+  </header>
 
-    <div class="card">
+  <main class="container">
+    <section class="card">
+      <h2>About this project</h2>
+      <p>
+        This is my DevOps portfolio website. I built it as a static site (HTML/CSS),
+        containerized it with Docker, automated image builds & pushes with GitHub Actions,
+        and deployed it on Azure App Service (Web App for Containers). Previously, I also
+        hosted the static site via GitHub Pages.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>End-to-end journey (what I did)</h2>
+      <ol class="journey">
+        <li>Built a simple static website using <strong>HTML & CSS</strong>.</li>
+        <li>Wrote a <strong>Dockerfile</strong> and containerized the site with <strong>Docker</strong>.</li>
+        <li>Pushed the image to <strong>Docker Hub</strong>.</li>
+        <li>Created a <strong>GitHub Actions</strong> workflow (YAML) to automatically build & push the Docker image on every push to <code>main</code>.</li>
+        <li>Initially hosted the static site using <strong>GitHub Pages</strong> to make it publicly available.</li>
+        <li>Deployed the Docker image to <strong>Azure Web App for Containers</strong> so it runs 24/7.</li>
+        <li>(Optional/Planned) Enabled <strong>Continuous Deployment</strong> from Docker Hub to Azure using a webhook.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>What this demonstrates</h2>
+      <ul>
+        <li>Version control with Git & GitHub</li>
+        <li>Containerization with Docker</li>
+        <li>CI/CD automation using GitHub Actions</li>
+        <li>Image publishing via Docker Hub</li>
+        <li>Cloud deployment on Azure App Service</li>
+        <li>Static hosting via GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section class="card">
       <h2>Skills</h2>
-      <p>Docker, Git, GitHub Actions, YAML, CI/CD, Bash, Linux, VS Code, HTML/CSS</p>
-    </div>
+      <p>
+        Docker, Git, GitHub Actions, CI/CD, YAML, Linux, Bash, Azure App Service, HTML/CSS
+      </p>
+    </section>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: saicharanmuthyala020@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/muthyala-sai-charan/" target="_blank">linkedin.com/in/saicharan</a></p>
-    </div>
+    <section class="card">
+      <h2>Links</h2>
+      <ul class="links">
+        <li>
+          <strong>Live on Azure:</strong>
+          <a href="https://saicharan-portfolio-docker-bndxa2fua3a2gnec.centralus-01.azurewebsites.net/" target="_blank">
+            Azure Web App
+          </a>
+        </li>
+        <li>
+          <strong>GitHub Pages version:</strong>
+          <a href="https://saicharan020.github.io/devops-portfolio-app/" target="_blank">
+            GitHub Pages
+          </a>
+        </li>
+        <li>
+          <strong>GitHub Repo:</strong>
+          <a href="https://github.com/saicharan020/devops-portfolio-app" target="_blank">
+            devops-portfolio-app
+          </a>
+        </li>
+        <li>
+          <strong>Docker Hub Image:</strong>
+          <a href="https://hub.docker.com/r/saicharan020/devops-portfolio-app" target="_blank">
+          saicharan020/devops-portfolio-app
+          </a>
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/muthyala-sai-charan/" target="_blank">
+            muthyala-sai-charan
+          </a>
+        </li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:saicharanmuthyala020@gmail.com">saicharanmuthyala020@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-    <div class="footer">
-      <p>© 2025 Saicharan | DevOps Portfolio</p>
+  <footer class="footer">
+    <div class="container">
+      © 2025 Sai Charan • DevOps Portfolio
     </div>
-  </div>
+  </footer>
 </body>
 </html>
